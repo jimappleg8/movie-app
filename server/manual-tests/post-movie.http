@@ -1,0 +1,8 @@
+POST http://localhost:3000/api/movie
+Content-Type: application/json
+
+{
+    "name": "The Godfather",
+    "time": ["21:00", "23:50"],
+    "rating": 9.2
+}

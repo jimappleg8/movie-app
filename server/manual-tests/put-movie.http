@@ -1,0 +1,8 @@
+PUT http://localhost:3000/api/movie/6323adc5e407ac304c7e3822
+Content-Type: application/json
+
+{
+    "name": "Avengers: Endgame",
+    "time": ["12:00", "14:15", "16:00", "21:30", "23:00"],
+    "rating": 8.8
+}
