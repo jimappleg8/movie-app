@@ -4,7 +4,7 @@ import { useTable } from 'react-table'
 import api from '../api'
 
 const Wrapper = styled.div`
-  padding: 0 40px 40px 40px;
+  padding: 40px;
     
   table {
     margin: 0 auto;
@@ -121,7 +121,6 @@ const MoviesList = () => {
   }, []);
 
   async function fetchMovieList() {
-    console.log("inside fetchMovieList.")
     try {
       let response = await api.getAllMovies()
       
@@ -163,7 +162,6 @@ const MoviesList = () => {
         Header: 'Delete',
         accessor: '',
         Cell: function(props) {
-          console.log(props)
           return (
             <span>
               <DeleteMovie id={props.row.original._id} />
